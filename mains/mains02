@@ -1,0 +1,150 @@
+EX02
+
+int main(void)
+{
+   	char c[] = "ABC";
+    printf("\nResult when uppercase alphabet is passed: %d", ft_str_is_alpha(c));
+
+    char c1[] = "abc";
+    printf("\nResult when lowercase alphabet is passed: %d", ft_str_is_alpha(c1));
+
+    char c2[] = "123!";
+    printf("\nResult when non-alphabetic characters are passed: %d", ft_str_is_alpha(c2));
+
+    char c3[] = "a!+=";
+    printf("\nResult when alphabetic characters and others are passed: %d", ft_str_is_alpha(c3));
+    
+	char c4[] = " ";
+    printf("\nResult when nothing is passed: %d", ft_str_is_alpha(c4));
+
+    return (0); 
+}
+
+EX03
+
+int main(void)
+{
+   	char c[] = "ABC";
+    printf("\nResult when uppercase alphabet is passed: %d", ft_str_is_numeric(c));
+
+    char c1[] = "abc";
+    printf("\nResult when lowercase alphabet is passed: %d", ft_str_is_numeric(c1));
+
+    char c2[] = "123";
+    printf("\nResult when numbers are passed: %d", ft_str_is_numeric(c2));
+
+    char c3[] = "1=a";
+    printf("\nResult when numbers and others characters are passed: %d", ft_str_is_numeric(c3));
+    
+	char c4[] = " ";
+    printf("\nResult when nothing is passed: %d", ft_str_is_numeric(c4));
+
+    return (0); 
+}
+
+EX04
+
+int main(void)
+{
+   	char c[] = "ABC";
+    printf("\nResult when uppercase alphabetic is passed: %d", ft_str_is_lowercase(c));
+
+    char c1[] = "abc";
+    printf("\nResult when lowercase alphabetic is passed: %d", ft_str_is_lowercase(c1));
+
+    char c2[] = "a!+=";
+    printf("\nResult when lowercase alphabetic character and others  are passed: %d", ft_str_is_lowercase(c2));
+
+	char c3[] = " ";
+    printf("\nResult when nothing is passed: %d", ft_str_is_lowercase(c3));
+    
+    return (0);
+}
+
+EX05
+
+int main(void)
+{
+   	char c[] = "ABC";
+    printf("\nResult when uppercase alphabetic is passed: %d", ft_str_is_uppercase(c));
+
+    char c1[] = "abc";
+    printf("\nResult when lowercase alphabetic is passed: %d", ft_str_is_uppercase(c1));
+
+    char c2[] = "A!+=";
+    printf("\nResult when non-alphabetic characters are passed: %d", ft_str_is_uppercase(c2));
+
+	char c3[] = " ";
+    printf("\nResult when nothing is passed: %d", ft_str_is_uppercase(c3));
+
+    return (0);
+}
+
+EX06
+
+int main(void)
+{
+    char c[] = "Manon23";
+    printf("\nResult when printable characters are passed: %d", ft_str_is_printable(c));
+
+    char c1[] = "hey\n";
+    printf("\nResult when printable characters and non printable characters are passed: %d", ft_str_is_printable(c1));
+
+    char c2[] = "❤️";
+    printf("\nResult when a non-printable character is passed: %d", ft_str_is_printable(c2));
+
+	char c3[] = " ";
+    printf("\nResult when an empty string is passed: %d", ft_str_is_printable(c3));
+
+    return (0);
+}
+
+EX07
+
+int main(void)
+{
+   	char c[] = "ABC";
+    printf("\nResult when uppercase alphabetic is passed: %s", ft_strupcase(c));
+
+    char c1[] = "abc";
+    printf("\nResult when lowercase alphabetic is passed: %s", ft_strupcase(c1));
+
+    char c2[] = "aBcdE";
+    printf("\nResult when lowercase and uppercase characters are passed: %s", ft_strupcase(c2));
+
+	char c3[] = " ";
+    printf("\nResult when nothing is passed: %s", ft_strupcase(c3));
+
+    return (0);
+}
+
+EX08
+
+int main(void)
+{
+   	char c[] = "ABC";
+    printf("\nResult when uppercase alphabetic is passed: %s", ft_strlowcase(c));
+
+    char c1[] = "abc";
+    printf("\nResult when lowercase alphabetic is passed: %s", ft_strlowcase(c1));
+
+    char c2[] = "aBcdE";
+    printf("\nResult when lowercase and uppercase characters are passed: %s", ft_strlowcase(c2));
+
+	char c3[] = " ";
+    printf("\nResult when nothing is passed: %s", ft_strlowcase(c3));
+
+    return (0);
+}
+
+EX09
+
+int	main(void)
+{
+	char	dest[20] = "Manon";
+	char	dest2[30] = "Manon"; 
+	char	src[20] = "HelloTheWorld";
+
+	printf("%d | %s\n%ld | %s", ft_strlcpy(dest, src, 40), dest, strlcpy(dest2, src, 40), dest2);
+	return (0);
+}

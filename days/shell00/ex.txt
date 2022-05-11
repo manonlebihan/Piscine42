@@ -1,0 +1,22 @@
+Ex01/02 :
+
+Changer permissions : chmod
+Changer liens physiques/symboliques : ln/ln -s
+Changer taille fichier : ecrire dedans ou truncate -s taille fichier
+Changer datetime : touch -t 202203081002 fichier OU touch -ht 202203081002
+
+EX03 : 
+
+Generer cle SSH : ssh-keygen 
+
+EX07 : 
+
+# cp a aBis
+# patch a sw.diff
+# mv a b
+# diff aBis b > AB.diff
+# diff AB.diff sw.diff
+
+EX09 :
+# touch file
+# file -m ft_magic

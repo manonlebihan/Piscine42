@@ -1,0 +1,27 @@
+COMMANDES UTILES :
+
+git add . && git commit -m "" && git push github master
+
+tar -xvf file.tar
+
+GIT :
+git init 
+git status
+git add .
+git commit -m "Message de commit"
+git remote add NOM_REPO ADRESSE_REPO 
+git push NOM_REPO master
+
+COMPILATION :
+gcc -Wall -Wextra -Werror 
+
+NORMINETTE : 
+
+norminette -RCheckForbiddenSourceHeader
+
+VIM :
+Creer Header :
+:Stdheader
+
+Chercher et remplacer string :
+:%s/ancienne_chaine/nuvelle_chaine/g

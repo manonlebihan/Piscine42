@@ -1,0 +1,19 @@
+lecture et parsing du dictionnaire
+    - ouverture du fichier
+    - lecture et parse des donnees
+
+module d'interconnectant parsing et algorithm d'association
+    - mise en place d'une structure contenant les donnees parser
+    - permettre la recuperation et association des donnees 
+
+algorithm d'association
+    - string to int
+    - decomposition en element basique et association syntaxique
+
+obviously
+    - protection contre les ficheirs innacessible
+    - protection contre les donnees erronees
+
+bonus :
+    - i8
+    - amelioration du module d'association syntaxique

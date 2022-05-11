@@ -1,0 +1,10 @@
+EX05
+
+int    main(void)
+{
+    char dest[200] = "Manon";
+    char dest2[200] = "Manon";
+    char src[] = "Victor"; 
+    printf("%d | %s\n%ld | %s", ft_strlcat(dest, src, 0), dest, strlcat(dest2, src, 0), dest2);
+	return (0);
+}
